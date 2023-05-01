@@ -1,0 +1,13 @@
+[Unit]
+Description=Captive Portal Client
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python /usr/bin/captive-portal-client.py
+Environment=PYTHONUNBUFFERED=1
+Restart=on-failure
+User=cpc
+
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+<title>Terms of Use</title>
+<link media="only screen and (max-width: 420px)" rel="stylesheet" href="ruckus_user_mobile.css" type="text/css" title="no title"/>
+
+<style type="text/css">
+
+#guest_tou th {
+    font-size: 1em;
+    width: 400px;
+    text-align: left;
+}
+
+#guest_tou td {
+    text-align: center;
+}
+
+
+</style>
+
+
+<script language="Javascript" type="text/javascript">
+//<![CDATA[
+var onloads = new Array();
+function bodyOnLoad() {
+    for ( var i = 0 ; i < onloads.length ; i++ ) {
+        onloads[i]();
+    }
+}
+
+function getCookie(name) { 
+    var re = new RegExp(name + "=([^;]*)");
+    var match = re.exec(document.cookie);
+    if (match)
+        return unescape(match[1]);
+    else
+        return null;
+}
+function deleteCookie(name) {
+    createCookie(name, '', -1);
+}
+function createCookie(name,value,days) {
+	if (days) {
+		var date = new Date();
+		date.setTime(date.getTime()+(days*24*60*60*1000));
+		var expires = "; expires="+date.toGMTString();
+	}
+	else var expires = "";
+	document.cookie = name+"="+value+expires+"; path=/";
+}
+
+function redirectToPeerZd(peerZd) {
+    if (peerZd != '') {
+        location.href = peerZd;
+    }
+}
+
+//]]>
+</script>
+</head>
+
+<body onload="bodyOnLoad()"><table id="wrapper"><tr><td valign="middle">
+<div id="dialog">
+<div id="dialog_header">
+    <a id="logo" href="index.jsp">img</a>
+    <h1>Terms of Use</h1>
+
+</div><!-- /dialog_header -->
+<div id="dialog_content">
+
+
+
+<form method="post" action="guest_tou.jsp">
+<table id="guest_tou">
+    <tr class="gap"><td>&nbsp;</td><td>&nbsp;</td></tr>
+    <tr><th><p>Please review the terms of use before continuing to use the wireless network:</p></th></tr>
+    <tr><td>
+        <p><textarea id="tou" rows="15" cols="45" readonly="true">Terms of Use
+
+          python3 -m http.server
+
+By accepting this agreement and accessing the wireless network, you acknowledge that you are of legal age, you have read and understood, and agree to be bound by this agreement.
+(*) The wireless network service is provided by the property owners and is completely at their discretion. Your access to the network may be blocked, suspended, or terminated at any time for any reason.
+(*) You agree not to use the wireless network for any purpose that is unlawful or otherwise prohibited and you are fully responsible for your use.
+(*) The wireless network is provided &quot;as is&quot; without warranties of any kind, either expressed or implied. 
+
+This wireless network is powered by Ruckus Wireless.</textarea></p>
+    </td></tr>
+    <tr><td>
+        <input type="button" name="ok" value="Accept and Continue" id="acceptBtn" onclick="redirectThisPage();" />
+    </td></tr>
+</table>
+</form>
+
+<script type="text/javascript">
+//<![CDATA[
+    function redirectThisPage () {
+        location.href = "https://google.com/";
+    };
+//]]>
+</script>
+
+    </div><!-- /dialog_content -->
+    <div id="dialog_footer"></div>
+
+    <p id="powered"><a href="http://www.ruckuswireless.com/">Powered by Ruckus Wireless</a></p>
+
+</div><!-- /dialog -->
+</td></tr></table>
+</body>
+</html>
+
+
+
